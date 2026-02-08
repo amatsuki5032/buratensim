@@ -1,0 +1,98 @@
+/* 共通テーマ変数 — 配色コンセプト「雨夜の月」 */
+
+:root {
+  /* ダークテーマ（デフォルト） */
+  --bg-primary: #08090c;
+  --bg-secondary: #0c0e14;
+  --bg-tertiary: #12141c;
+  --bg-elevated: #181a24;
+  --bg-hover: #1e2130;
+  --bg-input: #10121a;
+
+  --text-primary: #c8ccd8;
+  --text-secondary: #8890a4;
+  --text-muted: #555a6e;
+  --text-inverse: #08090c;
+
+  --accent-blue: #2563eb;
+  --accent-blue-hover: #3b82f6;
+  --accent-blue-muted: #1e40af;
+  --accent-bordeaux: #800020;
+  --accent-bordeaux-light: #a0304a;
+
+  --border-primary: #1e2030;
+  --border-subtle: #14161e;
+
+  --status-success: #22c55e;
+  --status-danger: #ef4444;
+  --status-warning: #f59e0b;
+  --status-info: #3b82f6;
+
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.6;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+
+  /* 陣営カラー */
+  --faction-wei: #4a90d9;
+  --faction-wu: #d94a4a;
+  --faction-shu: #4ad94a;
+  --faction-other: #a0a0a0;
+
+  /* レアリティカラー */
+  --rarity-5: #f0c040;
+  --rarity-4: #c080f0;
+  --rarity-3: #60b0f0;
+}
+
+/* ライトテーマ */
+[data-theme="light"] {
+  --bg-primary: #f4f5f7;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #ebedf0;
+  --bg-elevated: #ffffff;
+  --bg-hover: #e8eaef;
+  --bg-input: #f0f1f4;
+
+  --text-primary: #1a1c24;
+  --text-secondary: #555a6e;
+  --text-muted: #8890a4;
+  --text-inverse: #ffffff;
+
+  --accent-blue: #2563eb;
+  --accent-blue-hover: #1d4ed8;
+  --accent-blue-muted: #93c5fd;
+  --accent-bordeaux: #800020;
+  --accent-bordeaux-light: #c0506a;
+
+  --border-primary: #d0d4dc;
+  --border-subtle: #e4e6ec;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+}

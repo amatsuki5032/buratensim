@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブラ天 戦闘シミュレーター</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>ブラ天 戦闘シミュレーター</h1>
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" title="テーマ切替">🌙</button>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="setup">編成</button>
+      <button class="tab-btn" data-tab="result">結果</button>
+    </nav>
+
+    <!-- 編成タブ -->
+    <section class="tab-content active" id="tab-setup">
+      <div class="battle-setup">
+        <div class="army-panel" id="army1-panel"></div>
+        <div class="vs-column">
+          <span class="vs-text">VS</span>
+          <div class="battle-actions" style="flex-direction: column;">
+            <button class="btn btn-primary btn-large" id="btn-battle-single">1戦実行</button>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <input type="number" class="sim-count-input" id="sim-count" value="100" min="1" max="1000">
+              <button class="btn btn-secondary btn-large" id="btn-battle-multi">N戦実行</button>
+            </div>
+          </div>
+        </div>
+        <div class="army-panel" id="army2-panel"></div>
+      </div>
+    </section>
+
+    <!-- 結果タブ -->
+    <section class="tab-content" id="tab-result">
+      <div id="battle-result"></div>
+      <div class="battle-log" id="battle-log" style="margin-top: 24px;">
+        <div class="log-entry" style="color: var(--text-muted);">
+          戦闘を実行するとログが表示されます。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 武将選択モーダル -->
+  <div class="modal-overlay" id="general-modal"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
